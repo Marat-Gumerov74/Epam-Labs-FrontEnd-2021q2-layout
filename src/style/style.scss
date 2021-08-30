@@ -1,0 +1,16 @@
+@import "./_normalize.scss";
+@import "./_constants.scss";
+@import "./header.scss";
+@import "./posts.scss";
+@import "./right-sidebar.scss";
+@import './newsletter.scss';
+
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 1300px;
+}
