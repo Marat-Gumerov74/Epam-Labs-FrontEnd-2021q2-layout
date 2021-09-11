@@ -1,39 +1,53 @@
 .newsletter {
   width: 100%;
   min-height: 331px;
-  border: 1px solid red;
   display: flex;
   justify-content: space-around;
   background-color: #7BEEC7;
 
   &-block-title {
-    margin-top: 50px;
+    margin-top: 45px;
+    margin-left: 25px;
 
-    & h3 {
-      width: 487px;
+    & h3:first-child {
+      width: 500px;
       color: #ffffff;
       font-size: 30px;
-      border: 1px solid red;
       word-wrap: normal;
+      text-transform:uppercase;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      margin-left: 10px;
+      margin-bottom: 15px;
+      letter-spacing: -0.7px;
+    }
+    & h3:nth-child(2){
+      width: 500px;
+      color: #ffffff;
+      font-size: 30px;
+      text-transform:uppercase;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      margin-left: 10px;
+      letter-spacing: -0.7px;
+      margin-bottom: 22px;
     }
 
+
     & button {
-      width: 166px;
-      height: 50px;
+      width: 165px;
+      height: 49px;
       border: none;
       color: #7BEEC7;
       text-transform:uppercase;
-    }
+      margin-left: 12px;
 
-    //& p {
-    //  margin-top: 10px;
-    //  color: #7BEEC7;
-    //  text-align: center;
-    //  font-size: 14px;
-    //  width: 166px;
-    //  height: 50px;
-    //  background-color: #FFFFFF;
-    //}
+      & span {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+      }
+    }
   }
 
   &-block-form {
@@ -42,15 +56,41 @@
     height: 231px;
     padding-left: 20px;
     background-color: #ffffff;
+    margin-right: 20px;
 
 
-    & h3 {
-      width: 336px;
+    & h3:first-child {
+      width: 340px;
       font-size: 24px;
+      margin-top: 15px;
+      margin-left: 6px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      letter-spacing: -0.8px;
+      color: #60606E;
     }
 
+    & h3:nth-child(2){
+      width: 336px;
+      font-size: 24px;
+      margin-top: 10px;
+      margin-left: 6px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      letter-spacing: -0.7px;
+      color: #60606E;
+      margin-bottom: 8px;
+    }
+
+
     & p {
-      width: 464px;
+      margin-left: 5px;
+      margin-bottom: 28px;
+      width: 474px;
+      font-family: 'Open Sans', Arial, sans-serif;
+      font-size: 16px;
+      color: $color-comment;
+      line-height:25px;
     }
 
     & form {
@@ -59,6 +99,10 @@
         height: 51px;
         width: 375px;
         text-transform:uppercase;
+        outline: none;
+        border: none;
+        color: $color-placeholder;
+        font-size: 12px;
       }
       & input[type=submit] {
         background-color: #7BEEC7;
@@ -66,6 +110,12 @@
         height: 51px;
         margin: -5px;
         text-transform:uppercase;
+        outline: none;
+        border: none;
+        color: $color-white;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1px;
       }
     }
   }
