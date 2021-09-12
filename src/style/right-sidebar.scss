@@ -1,5 +1,147 @@
 .right-sidebar {
-  width: 265px;
+  width: 263px;
   height: 1195px;
-  background-color: gray;
+
+  & .searchbar {
+    margin-bottom: 47px;
+
+    &-form {
+      display: flex;
+      padding-right: 5px;
+
+      & input {
+        width: 100%;
+        height: 41px;
+        padding-left: 10px;
+        font-size: 12px;
+        border: none;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        background-color: rgba(213, 210, 210, 0.59);
+        color: $color-title;
+
+      }
+
+      & input:active, :hover, :focus {
+        outline: 0;
+        outline-offset: 0;
+      }
+
+      & button {
+        display: block;
+        background: url("../assets/icons/search11.svg");
+        width: 14px;
+        height: 14px;
+        margin-top: 14px;
+        margin-left: -28px;
+        cursor: pointer;
+        border: none;
+      }
+    }
+  }
 }
+
+.panel {
+  &-title {
+    margin-bottom: 24px;
+  }
+  &-menu ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-bottom: 30px;
+    & li {
+      width: 33%;
+    }
+    & p {
+      display: flex;
+      letter-spacing: -0.2px;
+      justify-content: center;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      color: $color-comment;
+      margin-bottom: 15px;
+    }
+    & li hr {
+      border: none;
+      background-color: #28c2b8;
+      color: #28c2b8;
+      height: 3px;
+    }
+  }
+  &-elements ul{
+    list-style-type: none;
+  }
+  & .element {
+    display: flex;
+    margin-bottom: 10px;
+    &-icon {
+      display: block;
+      background: url("../assets/image/cube.png") no-repeat;
+      width: 90px;
+      height: 80px;
+    }
+    &-text {
+      margin-left: 15px;
+    }
+
+    &-title {
+      color: $color-title;
+      letter-spacing: 1px;
+      margin-top: 15px;
+      width: 70%;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      margin-bottom: 5px;
+      line-height: 15px;
+    }
+    &-date {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      letter-spacing: -0.2px;
+      color: $color-title;
+    }
+  }
+
+}
+
+.categories {
+  &-title {
+
+  }
+  &-list ul{
+    list-style-type: none;
+  }
+}
+
+.tags {
+  &-title {
+
+  }
+  &-list ul{
+    list-style-type: none;
+  }
+}
+
+.archives {
+  &-title {
+
+  }
+  &-list ul{
+    list-style-type: none;
+  }
+}
+//
+//.group {
+//  &-title {
+//    font-size: 14px;
+//    font-family: 'Montserrat', sans-serif;
+//    font-weight: 700;
+//    color: $color-title;
+//  }
+//}
