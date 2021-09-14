@@ -1,123 +1,267 @@
-.newsletter {
-  width: 100%;
-  min-height: 331px;
-  display: flex;
-  justify-content: space-around;
-  background-color: #7BEEC7;
+@import "./_constants";
 
-  &-block-title {
-    margin-top: 45px;
-    margin-left: 25px;
+@media screen and (min-width:200px) and (max-width:768px) {
+  .newsletter {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: $color-calendar;
+    padding-bottom: 30px;
 
-    & h3:first-child {
-      width: 500px;
-      color: #ffffff;
-      font-size: 30px;
-      word-wrap: normal;
-      text-transform:uppercase;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      margin-left: 10px;
-      margin-bottom: 15px;
-      letter-spacing: -0.7px;
-    }
-    & h3:nth-child(2){
-      width: 500px;
-      color: #ffffff;
-      font-size: 30px;
-      text-transform:uppercase;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      margin-left: 10px;
-      letter-spacing: -0.7px;
-      margin-bottom: 22px;
-    }
+    &-block-title {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-
-    & button {
-      width: 165px;
-      height: 49px;
-      border: none;
-      color: #7BEEC7;
-      text-transform:uppercase;
-      margin-left: 12px;
-
-      & span {
-        font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 1.5px;
-      }
-    }
-  }
-
-  &-block-form {
-    margin-top: 50px;
-    width: 557px;
-    height: 231px;
-    padding-left: 20px;
-    background-color: #ffffff;
-    margin-right: 23px;
-
-
-    & h3:first-child {
-      width: 340px;
-      font-size: 24px;
-      margin-top: 15px;
-      margin-left: 6px;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      letter-spacing: -0.8px;
-      color: #60606E;
-    }
-
-    & h3:nth-child(2){
-      width: 336px;
-      font-size: 24px;
-      margin-top: 10px;
-      margin-left: 6px;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      letter-spacing: -0.7px;
-      color: #60606E;
-      margin-bottom: 8px;
-    }
-
-
-    & p {
-      margin-left: 5px;
-      margin-bottom: 26px;
-      width: 474px;
-      font-family: 'Open Sans', Arial, sans-serif;
-      font-size: 16px;
-      color: $color-comment;
-      line-height:25px;
-    }
-
-    & form {
-      & input[type=text] {
-        padding-left: 20px;
-        height: 51px;
-        width: 375px;
-        text-transform:uppercase;
-        border: 0.5px solid rgb(199, 198, 198);
-        //border: 0.5px solid $color-comment;
-        color:$color-comment;
-        font-size: 12px;
-
-      }
-      & input[type=submit] {
-        background-color: #7BEEC7;
-        width: 136px;
-        height: 51px;
-        margin: -5px;
-        text-transform:uppercase;
-        outline: none;
-        border: none;
+      & h3:first-child {
+        width: 100%;
         color: $color-white;
-        font-size: 14px;
+        font-size: 18px;
+        word-wrap: normal;
+        text-transform:uppercase;
+        font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        letter-spacing: 1px;
+        margin-bottom: 10px;
+        letter-spacing: -0.7px;
+        text-align: center;
+      }
+      & h3:nth-child(2){
+        width: 100%;
+        color: $color-white;
+        font-size: 18px;
+        text-transform:uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        letter-spacing: -0.7px;
+        margin-bottom: 22px;
+        text-align: center;
+      }
+
+      & button {
+        width: 180px;
+        height: 30px;
+        border: none;
+        border-radius: 35px;
+        color: $color-calendar;
+        text-transform:uppercase;
+        margin-bottom: 20px;
+        &:hover {
+          background-color: $color-panel-hover
+        }
+
+        & span {
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 1.5px;
+        }
+      }
+    }
+
+    &-block-form {
+      width: 480px;
+      height: 231px;
+      background-color: $color-white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+
+      & h3:first-child {
+        width: 340px;
+        font-size: 18px;
+        margin-top: 15px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        letter-spacing: -0.8px;
+        color: $color-lightgray;
+        display: flex;
+        justify-content: center;
+      }
+
+      & h3:nth-child(2){
+        width: 336px;
+        font-size: 18px;
+        margin-top: 10px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        letter-spacing: -0.7px;
+        color: $color-lightgray;
+        margin-bottom: 8px;
+        display: flex;
+        justify-content: center;
+      }
+
+      & p {
+        margin-bottom: 26px;
+        width: 480px;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 14px;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: $color-comment;
+        line-height:20px;
+      }
+
+      & form {
+        & input[type=text] {
+          margin-left: 20px;
+          padding-left: 20px;
+          height: 40px;
+          width: 280px;
+          text-transform:uppercase;
+          border: 0.5px solid rgb(199, 198, 198);
+          color:$color-comment;
+          font-size: 12px;
+
+        }
+        & input[type=submit] {
+          background-color: $color-calendar;
+          width: 80px;
+          height: 40px;
+          margin-right: 20px;
+          margin-left: -5px;
+          text-transform:uppercase;
+          outline: none;
+          border: none;
+          color: $color-white;
+          font-size: 14px;
+          font-weight: 700;
+          letter-spacing: 1px;
+          cursor: pointer;
+        }
       }
     }
   }
 }
+
+@media screen and (min-width:768px) {
+  .newsletter {
+    width: 100%;
+    min-height: 331px;
+    display: flex;
+    justify-content: space-around;
+    background-color: $color-calendar;
+
+    &-block-title {
+      margin-top: 45px;
+      margin-left: 25px;
+
+      & h3:first-child {
+        width: 500px;
+        color: $color-white;
+        font-size: 30px;
+        word-wrap: normal;
+        text-transform:uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        margin-left: 10px;
+        margin-bottom: 15px;
+        letter-spacing: -0.7px;
+      }
+      & h3:nth-child(2){
+        width: 500px;
+        color: $color-white;
+        font-size: 30px;
+        text-transform:uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        margin-left: 10px;
+        letter-spacing: -0.7px;
+        margin-bottom: 22px;
+      }
+
+      & button {
+        width: 165px;
+        height: 49px;
+        border: none;
+        color: $color-calendar;
+        text-transform:uppercase;
+        margin-left: 12px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $color-panel-hover
+        }
+
+        & span {
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 1.5px;
+        }
+      }
+    }
+
+    &-block-form {
+      margin-top: 50px;
+      width: 557px;
+      height: 231px;
+      padding-left: 20px;
+      background-color: $color-white;
+      margin-right: 23px;
+
+
+      & h3:first-child {
+        width: 340px;
+        font-size: 24px;
+        margin-top: 15px;
+        margin-left: 6px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        letter-spacing: -0.8px;
+        color: $color-lightgray;
+      }
+
+      & h3:nth-child(2){
+        width: 336px;
+        font-size: 24px;
+        margin-top: 10px;
+        margin-left: 6px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        letter-spacing: -0.7px;
+        color: $color-lightgray;
+        margin-bottom: 8px;
+      }
+
+      & p {
+        margin-left: 5px;
+        margin-bottom: 26px;
+        width: 474px;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 16px;
+        color: $color-comment;
+        line-height:25px;
+      }
+
+      & form {
+        & input[type=text] {
+          padding-left: 20px;
+          height: 51px;
+          width: 375px;
+          text-transform:uppercase;
+          border: 0.5px solid rgb(199, 198, 198);
+          color:$color-comment;
+          font-size: 12px;
+
+        }
+        & input[type=submit] {
+          background-color: $color-calendar;
+          width: 136px;
+          height: 51px;
+          margin: -5px;
+          text-transform:uppercase;
+          outline: none;
+          border: none;
+          color: $color-white;
+          font-size: 14px;
+          font-weight: 700;
+          letter-spacing: 1px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
