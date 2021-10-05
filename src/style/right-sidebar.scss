@@ -363,7 +363,7 @@
 
   .tags {
     margin-bottom: 45px;
-    &-title {
+    &__title {
       color: $color-lightgray;
       margin-bottom: 32px;
       text-transform: uppercase;
@@ -371,46 +371,18 @@
       font-family: 'Montserrat', sans-serif;
       font-weight: 600;
     }
-    &-list ul{
+    &__list ul{
       list-style-type: none;
       display: flex;
       flex-wrap: wrap;
       & li {
         margin-bottom: 5px;
         cursor: pointer;
-      }
-      & li:hover p {
-        background-color: $color-panel-hover;
-      }
-
-      & p {
         background-color: $color-panel;
         display: flex;
         justify-content: center;
         align-items: center;
 
-      }
-      & .el-css {
-        padding: 8px 22px 6px 20px;
-        margin-right: 5px;
-      }
-      & .el-js {
-        padding: 8px 12px 6px 10px;
-        margin-right: 5px;
-      }
-      & .el-jquery {
-        padding: 8px 17px 6px 18px;
-        margin-right: 5px;
-      }
-      & .el-html5 {
-        padding: 10px 19px 8px 14px;
-        margin-right: 5px;
-      }
-      & .el-bootstrap {
-        padding: 10px 13px 8px 15px;
-        margin-right: 10px;
-      }
-      & span {
         text-transform: uppercase;
         color: $color-lightgray;
         font-size: 12px;
@@ -418,8 +390,32 @@
         font-weight: 700;
         letter-spacing: -0.2px;
       }
+      & li:hover {
+        background-color: $color-panel-hover;
+      }
     }
   }
+}
+
+.el-css {
+  padding: 8px 22px 6px 20px;
+  margin-right: 5px;
+}
+.el-js {
+  padding: 8px 12px 6px 10px;
+  margin-right: 5px;
+}
+.el-jquery {
+  padding: 8px 17px 6px 18px;
+  margin-right: 5px;
+}
+.el-html5 {
+  padding: 10px 19px 8px 14px;
+  margin-right: 5px;
+}
+.el-bootstrap {
+  padding: 10px 13px 8px 15px;
+  margin-right: 10px;
 }
 
 

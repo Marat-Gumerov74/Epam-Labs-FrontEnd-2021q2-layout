@@ -47,14 +47,11 @@
         color: $color-calendar;
         text-transform:uppercase;
         margin-bottom: 20px;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
         &:hover {
           background-color: $color-panel-hover
-        }
-
-        & span {
-          font-size: 12px;
-          font-weight: 700;
-          letter-spacing: 1.5px;
         }
       }
     }
